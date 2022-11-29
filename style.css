@@ -17,8 +17,24 @@ h3 {
   color: black;
 }
 
+span {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 0.5em;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
 
 .main-container {
@@ -68,6 +84,14 @@ nav {
 
 /* ARTICLE ROW CONTAINER */
 
-.article-row-container {
+.top-articles-row-container {
   margin-top: 1em;
+}
+
+article.top-article-container {
+  display: flex;
+}
+
+.top-article-content {
+  padding-left: 2.5em;
 }
