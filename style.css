@@ -15,6 +15,7 @@ h1,
 h2,
 h3 {
   color: black;
+  font-weight: 800;
 }
 
 span {
@@ -52,7 +53,13 @@ nav {
 }
 
 .main-article > article > p {
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.hero-image {
+  width: 100%;
 }
 
 .read-more-link {
@@ -70,27 +77,32 @@ nav {
 .sidebar {
   background-color: hsl(240, 100%, 5%);
   padding: 1.5em;
-  margin-top: 4em;
-  max-width: 25em;
+  max-width: 20em;
+  margin-top: 2em;
 }
 
 .sidebar > h2 {
   color: hsl(35, 77%, 62%);
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .sidebar > article > h3 {
   color: hsl(36, 100%, 99%);
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.sidebar > article > p {
+  color: hsl(233, 8%, 79%);
+  font-size: 1rem;
 }
 
 .sidebar > article:not(:last-child) {
   border-bottom: 1px solid hsl(236, 13%, 42%);
 }
 
-.sidebar > article > p {
-  color: hsl(233, 8%, 79%);
-}
+
 
 /* ARTICLE ROW CONTAINER */
 
@@ -105,15 +117,36 @@ article.top-article-container {
 
 .top-article-content {
   padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-article-content > p {
+  margin-bottom: 0;
+}
+
+.small-img {
+  width: 28%;
 }
 
 @media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+nav {
+  padding-left: 3em;
+}
+
   ul {
     flex-direction: row;
+    margin-right: 34em;
   }
 
   li {
-    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.2rem;
   }
 
 .sidebar {
@@ -126,28 +159,39 @@ article.top-article-container {
 
   .main-container {
     display: grid;
-    padding: 2em;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 40em 20em;
-    gap: 1em;
+    padding-left: 3.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 31em 5em 10em;
+    gap: 1.5em;
     grid-template-areas:
       'main sidebar'
+      '. .'
       'article article';
   }
 
   .main-article {
     display: flex;
+    margin-top: 2em;
     grid-area: main;
     width: 100%;
-    align-items: center;
   }
 
   .top-articles-row-container {
     grid-area: article;
     display: flex;
+    width: 84%;
+    margin-top: 0;
   }
 
-  h1 {
-    font-size: 3rem;
+  article.top-article-container {
+    display: flex;
   }
+
+  .top-article-content {
+    width: 65%;
+}
+
+  article.sub-article {
+    padding-left: 2em;
+}
 }
