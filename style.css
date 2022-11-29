@@ -47,12 +47,15 @@ nav {
   padding: 1em;
 }
 
+.hero-image {
+}
+
 .main-container {
   padding: 0.7em;
 }
 
 .main-article > article > p {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .read-more-link {
@@ -71,7 +74,7 @@ nav {
   background-color: hsl(240, 100%, 5%);
   padding: 1.5em;
   margin-top: 4em;
-  max-width: 18em;
+  max-width: 25em;
 }
 
 .sidebar > h2 {
@@ -100,10 +103,11 @@ nav {
 
 article.top-article-container {
   display: flex;
+  margin-top: 2em;
 }
 
 .top-article-content {
-  padding-left: 2.5em;
+  padding-left: 1.5em;
 }
 
 @media (min-width: 600px) {
@@ -115,12 +119,21 @@ article.top-article-container {
     padding-left: 2em;
   }
 
+.sidebar {
+  margin-top: 0;
+}
+
+  .hero-image {
+    width: 100%;
+  }
+
   .main-container {
     display: grid;
+    padding: 2em;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 400px 200px;
+    grid-template-rows: 40em 20em;
+    gap: 1em;
     grid-template-areas:
-      'main sidebar'
       'main sidebar'
       'article article';
   }
@@ -128,7 +141,7 @@ article.top-article-container {
   .main-article {
     display: flex;
     grid-area: main;
-    width: 60%;
+    width: 100%;
     align-items: center;
   }
 
