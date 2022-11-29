@@ -17,8 +17,16 @@ h3 {
   color: black;
 }
 
+nav {
+  display: flex;
+}
+
 .main-container {
   padding: 0.7em;
+}
+
+.main-article > article > p {
+  padding-bottom: 1em;
 }
 
 .read-more-link {
@@ -31,15 +39,35 @@ h3 {
   font-size: 0.8rem;
 }
 
+/* SIDEBAR STYLING */
+
 .sidebar {
   background-color: hsl(240, 100%, 5%);
   padding: 1.5em;
+  margin-top: 4em;
+  max-width: 18em;
 }
 
 .sidebar > h2 {
   color: hsl(35, 77%, 62%);
+  margin-top: 0;
+  font-size: 2rem;
 }
 
 .sidebar > article > h3 {
   color: hsl(36, 100%, 99%);
+}
+
+.sidebar > article:not(:last-child) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.sidebar > article > p {
+  color: hsl(233, 8%, 79%);
+}
+
+/* ARTICLE ROW CONTAINER */
+
+.article-row-container {
+  margin-top: 1em;
 }
