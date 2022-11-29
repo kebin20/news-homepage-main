@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: hsl(36, 100%, 99%);
+  font-family: 'Inter', sans-serif;
+}
+
+
+.main-container {
+  padding: 0.7em;
+}
+
+.read-more-link {
+  padding: 0.5em 2.1em;
+  background-color: hsl(5, 85%, 63%);
+  letter-spacing: 1.5;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
