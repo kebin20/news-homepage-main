@@ -115,6 +115,33 @@ article.top-article-container {
     padding-left: 2em;
   }
 
-  nav {
+  .main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'img img sidebar'
+      'main main sidebar'
+      'article article articlr';
+  }
+
+  .hero-image {
+    grid-area: img;
+  }
+
+  .main-article {
+    display: flex;
+    grid-area: main;
+    width: 60%;
+    align-items: center;
+  }
+
+  .top-articles-row-container {
+    grid-area: article;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 }
