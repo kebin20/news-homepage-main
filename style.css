@@ -21,6 +21,16 @@ span {
   font-size: 1.5rem;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
 h3 {
   font-size: 1rem;
   margin-top: 0.5em;
@@ -94,4 +104,17 @@ article.top-article-container {
 
 .top-article-content {
   padding-left: 2.5em;
+}
+
+@media (min-width: 600px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    padding-left: 2em;
+  }
+
+  nav {
+  }
 }
