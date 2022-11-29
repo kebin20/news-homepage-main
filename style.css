@@ -8,19 +8,31 @@ body,
 html {
   background-color: hsl(36, 100%, 99%);
   font-family: 'Inter', sans-serif;
+  color: hsl(236, 13%, 42%);
 }
-
 
 .main-container {
   padding: 0.7em;
 }
 
 .read-more-link {
-  padding: 0.5em 2.1em;
+  padding: 1em 2.3em;
   background-color: hsl(5, 85%, 63%);
-  letter-spacing: 1.5;
+  letter-spacing: 0.2rem;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.sidebar {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.sidebar > h2 {
+  color: hsl(35, 77%, 62%);
+}
+
+.sidebar > article > h3 {
+  color: hsl(36, 100%, 99%);
 }
