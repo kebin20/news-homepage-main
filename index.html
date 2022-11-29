@@ -20,12 +20,14 @@
           fill="#00001A"
         />
       </svg>
-      <!-- <svg width="30" height="17" xmlns="http://www.w3.org/2000/svg">
-        <g fill="#00001A" fill-rule="evenodd">
-          <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
-          <path d="M0 0h40v3H0z" />
-        </g>
-      </svg> -->
+      <!-- <button>
+        <svg width="30" height="17" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#00001A" fill-rule="evenodd">
+            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+            <path d="M0 0h40v3H0z" />
+          </g>
+        </svg>
+      </button> -->
       <ul>
         <li>Home</li>
         <li>New</li>
@@ -35,73 +37,89 @@
       </ul>
     </nav>
     <div class="main-container">
-      <div class="hero-container">
-        <picture>
-          <source
-            srcset="./assets/images/image-web-3-desktop.jpg"
-            media="(min-width: 600px)"
-          />
-          <img
-            src="./assets/images/image-web-3-mobile.jpg"
-            alt="hero image"
-            class="hero-image"
-          />
-        </picture>
-        <section class="main-article">
-          <h1>The Bright Future of Web 3.0?</h1>
-          <article class="sub-article">
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
-            </p>
-            <a href="#" class="read-more-link">Read More</a>
-          </article>
-        </section>
-      </div>
-      <section class="sidebar">
-        <h2>New</h2>
-        <article>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </article>
-        <article>
-          <h3>The Downsides of AI Artistry</h3>
+      <picture>
+        <source
+          srcset="./assets/images/image-web-3-desktop.jpg"
+          media="(min-width: 600px)"
+        />
+        <img
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt="hero image"
+          class="hero-image"
+        />
+      </picture>
+      <section class="hero-container">
+        <h1 class="hero-container__h1">The Bright Future of Web 3.0?</h1>
+        <article class="hero-container__p">
           <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <div>
+            <a href="#" class="hero-container__a">Read More</a>
+          </div>
+        </article>
+      </section>
+      <section class="sidebar">
+        <h2 class="sidebar__h2">New</h2>
+        <article class="sidebar-article">
+          <a href="#" class="sidebar-article__a">Hydrogen VS Electric Cars</a>
+          <p class="sidebar-article__p">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <article class="sidebar-article">
+          <a href="#" class="sidebar-article__a"
+            >The Downsides of AI Artistry</a
+          >
+          <p class="sidebar-article__p">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
         </article>
-        <article>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>
+        <article class="sidebar-article">
+          <a href="#" class="sidebar-article__a">Is VC Funding Drying Up?</a>
+          <p class="sidebar-article__p">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
         </article>
       </section>
-      <section class="top-articles-row-container">
-        <article class="top-article-container">
-          <img  class="small-img" src="./assets/images/image-retro-pcs.jpg" alt="image" />
-          <div class="top-article-content">
+      <section class="ranked-articles-container">
+        <article class="ranked-article">
+          <img
+            class="ranked-article__img"
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="image"
+          />
+          <div class="ranked-article-content">
             <span>01</span>
-            <h3>Reviving Retro PCs</h3>
+            <a href="#">Reviving Retro PCs</a>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </article>
-        <article class="top-article-container">
-          <img class="small-img" src="./assets/images/image-top-laptops.jpg" alt="image" />
-          <div class="top-article-content">
+        <article class="ranked-article">
+          <img
+            class="ranked-article__img"
+            src="./assets/images/image-top-laptops.jpg"
+            alt="image"
+          />
+          <div class="ranked-article-content">
             <span>02</span>
-            <h3>Top 10 Laptops of 2022</h3>
+            <a href="#">Top 10 Laptops of 2022</a>
             <p>Our best picks for various needs and budgets.</p>
           </div>
         </article>
-        <article class="top-article-container">
-          <img class="small-img" src="./assets/images/image-gaming-growth.jpg" alt="image" />
-          <div class="top-article-content">
+        <article class="ranked-article">
+          <img
+            class="ranked-article__img"
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="image"
+          />
+          <div class="ranked-article-content">
             <span>03</span>
-            <h3>Reviving Retro PCs</h3>
+            <a href="#">Reviving Retro PCs</a>
             <p>
               The Growth of Gaming How the pandemic has sparked fresh
               opportunities.
