@@ -118,15 +118,11 @@ article.top-article-container {
   .main-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 200px;
     grid-template-areas:
-      'img img sidebar'
-      'main main sidebar'
-      'article article articlr';
-  }
-
-  .hero-image {
-    grid-area: img;
+      'main sidebar'
+      'main sidebar'
+      'article article';
   }
 
   .main-article {
