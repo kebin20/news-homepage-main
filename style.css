@@ -11,6 +11,12 @@ html {
   color: hsl(236, 13%, 42%);
 }
 
+h1,
+h2,
+h3 {
+  color: black;
+}
+
 .main-container {
   padding: 0.7em;
 }
@@ -27,6 +33,7 @@ html {
 
 .sidebar {
   background-color: hsl(240, 100%, 5%);
+  padding: 1.5em;
 }
 
 .sidebar > h2 {
