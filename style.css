@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+/* img {
+  width: 100%;
+} */
+
 body,
 html {
   /* background-color: hsl(36, 100%, 99%); */
@@ -149,7 +153,7 @@ nav {
 }
 
 .ranked-article-content {
-  display: block;
+  display: flex;
   padding-left: 2em;
 }
 
@@ -193,12 +197,45 @@ nav {
 
   .main-container {
     display: grid;
-    border: 1px solid pink;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 12em);
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
     grid-template-areas:
-      'img img sidebar'
-      'hero hero sidebar'
-      'rank rank rank';
+    "header header"
+      'img sidebar'
+      'hero sidebar'
+      'rank rank';
   }
+
+header {
+grid-area: header;
+}
+
+  .hero-container {
+    flex-direction: row;
+    grid-area: hero;
+  }
+
+  .hero-image{
+    grid-area: img;
+    width: 100%;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    margin-top: 0;
+  }
+
+  .ranked-articles-container {
+    flex-direction: row;
+    grid-area: rank;
+  }
+
+  .ranked-article-content {
+    flex-direction: column;
+}
+
+.ranked-article {
+  margin-right: 2em;
+}
+
 }
