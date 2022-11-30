@@ -169,19 +169,23 @@ nav {
 
 /* HAMBURGER MENU STYLING */
 
-nav {
-  overflow: hidden;
-  position: relative;
-}
-
-nav .nav-menu {
-  display: none;
-}
-
-nav a {
-  display: block;
-  padding: 14px 16px;
-}
-
 @media (min-width: 600px) {
+  /* body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4, 30em);
+  } */
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-item {
+    margin-left: 1em;
+  }
 }
