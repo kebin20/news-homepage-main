@@ -14,9 +14,11 @@ a {
   text-decoration: none;
 }
 
-/* img {
-  width: 100%;
-} */
+picture {
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 body,
 html {
@@ -24,14 +26,19 @@ html {
   font-family: 'Inter', sans-serif;
   color: hsl(236, 13%, 42%);
   background-color: red;
+  overflow-x: hidden;
 }
 
 /* NAVBAR STYLING */
+header {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .nav__hamburger-menu {
@@ -40,17 +47,14 @@ nav {
   cursor: pointer;
 }
 
-.nav-logo {
-  width: 70%;
-}
-
 /* CONTAINER STYLING */
 
 .main-container {
+  /* width: 100%; */
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 /* HERO STYLING */
@@ -62,17 +66,20 @@ nav {
 .hero-container {
   display: flex;
   flex-direction: column;
+  padding: 0.5em;
 }
 
 .hero-container__h1 {
   color: hsl(240, 100%, 5%);
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 1;
   margin: 0;
 }
 
 .hero-container__p {
-  font-size: 0.9rem;
+  margin-top: 1em;
+  font-size: 1.05rem;
   line-height: 2;
 }
 
@@ -101,7 +108,7 @@ nav {
   background-color: hsl(240, 100%, 5%);
   padding: 1em;
   margin-top: 3em;
-  max-width: 20em;
+  max-width: 100%;
 }
 
 .sidebar__h2 {
@@ -131,9 +138,9 @@ nav {
 
 .sidebar-article__p {
   color: hsl(236, 13%, 42%);
-  font-size: 0.9rem;
-  margin-top: 0.8em;
-  margin-bottom: 1em;
+  font-size: 1.1rem;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .sidebar > article:not(:last-child) {
@@ -145,22 +152,32 @@ nav {
 .ranked-articles-container {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
 }
 
 .ranked-article {
   display: flex;
+  margin-top: 1em;
+  margin-bottom: 2em
 }
+
+.ranked-article__img {
+  height: 8em;
+}
+
 
 .ranked-article-content {
   display: flex;
-  padding-left: 2em;
+  padding-left: 1em;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .ranked-article-content > a {
-  font-weight: bold;
-  margin-top: 1em;
+  font-weight: 800;
   color: hsl(240, 100%, 5%);
+  font-size: 1.2rem;
 }
 
 .ranked-article-content > a:hover {
@@ -169,14 +186,12 @@ nav {
 
 .ranked-article-content > p {
   font-size: 0.9rem;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  
 }
 
 .rank-number {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 0.5em;
 }
 
 /* HAMBURGER MENU STYLING */
