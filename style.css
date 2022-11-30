@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body,
 html {
   background-color: hsl(36, 100%, 99%);
@@ -16,7 +24,7 @@ html {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 2em;
 }
 
 .nav__hamburger-menu {
@@ -34,7 +42,7 @@ nav {
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 2em;
 }
 
 /* HERO STYLING */
@@ -60,17 +68,16 @@ nav {
   line-height: 2;
 }
 
-.hero-container__div {
+.\.hero-container__div {
   margin-top: 2em;
 }
 
 .hero-container__a {
   padding: 1em 2em;
   margin-top: 5em;
+  color: white;
   background-color: hsl(5, 85%, 63%);
   letter-spacing: 0.2rem;
-  text-decoration: none;
-  color: hsl(36, 100%, 99%);
   text-transform: uppercase;
   font-size: 0.9rem;
 }
@@ -106,7 +113,6 @@ nav {
 
 .sidebar-article__a {
   margin: 0;
-  text-decoration: none;
   color: hsl(36, 100%, 99%);
   font-weight: bold;
 }
@@ -144,7 +150,6 @@ nav {
 .ranked-article-content > a {
   font-weight: bold;
   margin-top: 1em;
-  text-decoration: none;
   color: hsl(240, 100%, 5%);
 }
 
@@ -160,6 +165,22 @@ nav {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+
+/* HAMBURGER MENU STYLING */
+
+nav {
+  overflow: hidden;
+  position: relative;
+}
+
+nav .nav-menu {
+  display: none;
+}
+
+nav a {
+  display: block;
+  padding: 14px 16px;
 }
 
 @media (min-width: 600px) {
