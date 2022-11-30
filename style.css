@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -124,6 +126,8 @@ nav {
 .sidebar-article__p {
   color: hsl(236, 13%, 42%);
   font-size: 0.9rem;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
 }
 
 .sidebar > article:not(:last-child) {
@@ -159,6 +163,8 @@ nav {
 
 .ranked-article-content > p {
   font-size: 0.9rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .rank-number {
@@ -170,12 +176,6 @@ nav {
 /* HAMBURGER MENU STYLING */
 
 @media (min-width: 600px) {
-  /* body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(4, 30em);
-  } */
-
   nav {
     display: flex;
     align-items: center;
@@ -187,5 +187,15 @@ nav {
 
   .nav-item {
     margin-left: 1em;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas:
+      'img img sidebar'
+      'hero hero sidebar'
+      'rank rank rank';
   }
 }
