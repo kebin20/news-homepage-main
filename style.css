@@ -22,10 +22,9 @@ picture {
 
 body,
 html {
-  /* background-color: hsl(36, 100%, 99%); */
+  background-color: hsl(36, 100%, 99%);
   font-family: 'Inter', sans-serif;
   color: hsl(236, 13%, 42%);
-  background-color: red;
   overflow-x: hidden;
 }
 
@@ -200,35 +199,59 @@ nav {
   nav {
     display: flex;
     align-items: center;
+    padding-bottom: 1.5em;
   }
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  max-width: 100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
   .nav-menu {
     display: flex;
   }
 
   .nav-item {
-    margin-left: 1em;
+    margin-left:5em;
   }
 
   .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    grid-template-columns: 1fr 35em;
+    gap: 2em;
     grid-template-areas:
     "header header"
       'img sidebar'
       'hero sidebar'
       'rank rank';
+      padding: 4em;
   }
 
 header {
 grid-area: header;
 }
 
+.hero-container__h1 {
+  font-size: 3.5rem;
+  width: 12em;
+}
+
   .hero-container {
     flex-direction: row;
     grid-area: hero;
   }
+
+  .hero-container__p {
+    margin-top: 0;
+    padding-left: 4em;
+}
 
   .hero-image{
     grid-area: img;
@@ -240,6 +263,15 @@ grid-area: header;
     margin-top: 0;
   }
 
+  .sidebar-article__a {
+font-size: 1.5rem;
+}
+
+.sidebar-article__p {
+  font-size: 1.2rem;
+  padding-top: 1em;
+}
+
   .ranked-articles-container {
     flex-direction: row;
     grid-area: rank;
@@ -250,7 +282,9 @@ grid-area: header;
 }
 
 .ranked-article {
-  margin-right: 2em;
+  margin-right: 5em;
+  margin-top: 0; 
+   margin-bottom: 0;
 }
 
 }
