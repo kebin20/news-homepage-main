@@ -16,9 +16,10 @@ a {
 
 body,
 html {
-  background-color: hsl(36, 100%, 99%);
+  /* background-color: hsl(36, 100%, 99%); */
   font-family: 'Inter', sans-serif;
   color: hsl(236, 13%, 42%);
+  background-color: red;
 }
 
 /* NAVBAR STYLING */
@@ -42,6 +43,7 @@ nav {
 /* CONTAINER STYLING */
 
 .main-container {
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 2em;
@@ -191,8 +193,9 @@ nav {
 
   .main-container {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 400px);
+    border: 1px solid pink;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 12em);
     grid-template-areas:
       'img img sidebar'
       'hero hero sidebar'
