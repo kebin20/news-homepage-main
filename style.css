@@ -271,14 +271,14 @@ ul.nav-menu {
 
   .main-container {
     display: grid;
-    grid-template-columns: 1fr 35em;
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
     grid-template-areas:
       'header header'
       'img sidebar'
       'hero sidebar'
       'rank rank';
-    padding: 4em;
+    padding: 2em;
   }
 
   .mobile-header {

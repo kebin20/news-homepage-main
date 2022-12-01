@@ -1,15 +1,13 @@
-import './style.css';
+// import './style.css';
 
-const get = element => document.getElementById(element);
+const menuButton = document.getElementById("menu-btn")
+const exitButton = document.getElementById("exit-btn")
+const nav = document.getElementById("nav")
 
-let open = get("menu-btn");
-// let nav = get("nav");
-let exit = get("exit-btn");
-
-open.addEventListener('click', () => {
-    nav.classList.add('open-nav');
+menuButton.addEventListener('click', () => {
+nav.classList.add('open-nav')
 })
 
-exit.addEventListener('click', () => {
-    nav.classList.remove('open-nav');
+exitButton.addEventListener('click', () => {
+nav.classList.remove('open-nav')
 })
