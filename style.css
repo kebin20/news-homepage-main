@@ -27,7 +27,7 @@ html {
   color: hsl(236, 13%, 42%);
   /* overflow-x: hidden; */
 }
-
+/* HAMBURGER MENU STYLING */
 /* NAVBAR STYLING */
 header {
   display: flex;
@@ -235,9 +235,7 @@ ul.nav-menu {
   font-weight: bold;
 }
 
-/* HAMBURGER MENU STYLING */
-
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   body {
     width: 100vw;
     height: 100vh;
@@ -261,6 +259,14 @@ ul.nav-menu {
     justify-content: space-between;
   }
 
+  nav {
+    visibility: unset;
+  }
+
+.nav__hamburger-menu, .close-btn {
+  visibility: hidden;
+}
+
   .nav-menu {
     display: flex;
   }
@@ -271,7 +277,7 @@ ul.nav-menu {
 
   .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     gap: 2em;
     grid-template-areas:
       'header header'
