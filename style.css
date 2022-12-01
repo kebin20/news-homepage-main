@@ -39,43 +39,55 @@ header {
 
 /* POPOUT MENU */
 
-nav {
-  position: fixed;
-  background: white;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  width: 80%;
-  visibility: hidden;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: all 0.3s;
-}
-
 .nav__hamburger-menu {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-nav ul li {
-  display: block;
-  padding: 0.2em;
-  font-size: 1.8em;
+.close-btn {
+  padding-right: 0.2em;
+  font-size: 4em;
+  cursor: pointer;
+  text-align: right;
 }
 
-.selected {
-  background: red;
-}
+/* .selected {
+  background: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+} */
 
 .open-nav {
   visibility: unset;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(1%);
 }
 
-i {
-  cursor: pointer;
+nav {
+  position: fixed;
+  text-align: left;
+  background-color: hsl(36, 100%, 99%);
+  color: hsl(240, 100%, 5%);
+  height: 100vh;
+  right: 0;
+  top: 0;
+  width: 65%;
+  visibility: hidden;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+nav ul li {
+  display: block;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+ul.nav-menu {
+  padding: 1em;
+  margin-top: 3em;
 }
 
 /* CONTAINER STYLING */
