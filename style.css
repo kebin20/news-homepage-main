@@ -251,12 +251,16 @@ ul.nav-menu {
     grid-template-columns: 1fr auto;
     gap: 2em;
     grid-template-areas:
-      'header header'
-      'img sidebar'
-      'hero sidebar'
-      'rank rank';
+      'header header header'
+      'img img sidebar'
+      'hero hero sidebar'
+      'one two three';
     padding: 2em;
   }
+
+  .one {grid-area: one;}
+  .two{grid-area: two;}
+  .three{grid-area: three}
 
   /* NAVBAR STYLING */
   header {
@@ -304,6 +308,7 @@ ul.nav-menu {
   }
 
   picture {
+    grid-area: img;
     margin: 0;
     padding: 0;
   }
@@ -324,7 +329,6 @@ ul.nav-menu {
   }
 
   .hero-image {
-    grid-area: img;
     width: 100%;
   }
 
