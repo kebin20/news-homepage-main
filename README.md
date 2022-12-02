@@ -54,5 +54,5 @@ Another significant trouble I encountered was trying to show the list of links i
 
 ## Author
 
-- Website - [News Homepage](https://www.your-site.com)
+- Website - [News Homepage](https://kebin20.github.io/news-homepage-main/)
 - Frontend Mentor - [@kebin20](https://www.frontendmentor.io/profile/kebin20)
