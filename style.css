@@ -243,7 +243,7 @@ ul.nav-menu {
   body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .main-container {
@@ -262,7 +262,7 @@ ul.nav-menu {
   header {
     display: flex;
     align-items: center;
-    padding-bottom: 1.5em;
+    padding-bottom: 0;
   }
 
   .header-menu {
@@ -275,19 +275,27 @@ ul.nav-menu {
   }
 
   nav {
+    position: relative;
+    height: auto;
     visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+    transition: none;
   }
 
 .nav__hamburger-menu, .close-btn {
-  visibility: hidden;
+  display: none;
 }
 
-  .nav-menu {
-    display: flex;
-  }
+ul.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  padding-right: 0;
+}
 
   .nav-item {
-    margin-left: 5em;
+    padding-left: 2em;
   }
 
   /* HERO STYLING */
@@ -320,7 +328,7 @@ ul.nav-menu {
     width: 100%;
   }
 
-  /* SIDEBAR DTYLING */
+  /* SIDEBAR STYLING */
   .sidebar {
     grid-area: sidebar;
     margin-top: 0;
