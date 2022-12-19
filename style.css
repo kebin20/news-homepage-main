@@ -225,8 +225,7 @@ ul.nav-menu {
   .main-container {
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    /* grid-template-rows: auto 0.5fr 0.9fr auto; */
-    grid-template-rows: auto 0fr 0.7fr auto;
+    grid-template-rows: auto 1fr 15em auto;
     gap: 2em;
     grid-template-areas:
       'header header header'
