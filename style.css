@@ -356,7 +356,7 @@ ul.nav-menu {
   .main-container {
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    grid-template-rows: auto 1fr 0fr auto;
+    grid-template-rows: auto 1fr 12em auto;
     gap: 2em;
     grid-template-areas:
       'header header header'
